@@ -1,11 +1,11 @@
 const chai = require('chai')
-const createDynamicPrefixer = require('../../modules/dynamic/createPrefixer')
-const dynamicPlugins = require('../../modules/dynamic/plugins')
+const createDynamicPrefixer = require('../../modules/dynamic/createPrefixer').default
+const dynamicPlugins = require('../../modules/dynamic/plugins').default
 
-const createStaticPrefixer = require('../../modules/static/createPrefixer')
-const staticPlugins = require('../../modules/static/plugins')
+const createStaticPrefixer = require('../../modules/static/createPrefixer').default
+const staticPlugins = require('../../modules/static/plugins').default
 
-const generateData = require('../../modules/generator')
+const generateData = require('../../modules/generator').default
 
 const browserList = {
   chrome: 0,

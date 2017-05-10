@@ -26,7 +26,9 @@ const plugins = [
   flex
 ]
 
-export default createPrefixer({
+const prefix = createPrefixer({
   prefixMap: staticData.prefixMap,
   plugins
 })
+
+export default prefix
